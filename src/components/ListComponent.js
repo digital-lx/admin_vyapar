@@ -1,17 +1,19 @@
-import React from "react";
-const ListComponent = (props) => {
+import React, { useEffect } from "react";
 
-console.log('abcd',props.user_data.set)
-const get_list=()=>{
-const list_item =props.user_data.set.map((el)=>{return<li>{el.key}:{el.value}</li>
- })
-return list_item;
-}
+//TODO:Create USER TABLE
+// - Create Header Component - customize header css according to headers array length
+// - Create List of Data - ListItem -
+// - Create footer with pagination
+
+const ListComponent = ({ data, headers, handlePagination }) => {
+  useEffect(() => {
+    console.log("list_data", data);
+  }, []);
+
   return (
     <div>
       <text>List Component</text>
       <h4>User</h4>
-      <ul>{get_list()}</ul>
     </div>
   );
 };

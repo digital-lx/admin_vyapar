@@ -10,7 +10,13 @@ const CustomInput = ({ value, placeholder, onChange, index }) => {
     />
   );
 };
-const EditComponent = ({ input_data, mode, type, handleChange }) => {
+const EditComponent = ({
+  input_data,
+  mode,
+  type,
+  handleChange,
+  handleClick,
+}) => {
   return (
     <div>
       <h1>
@@ -26,6 +32,7 @@ const EditComponent = ({ input_data, mode, type, handleChange }) => {
           />
         );
       })}
+      <button onClick={handleClick}>{mode}</button>
     </div>
   );
 };

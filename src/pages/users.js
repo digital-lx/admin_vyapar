@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import EditComponent from "../components/EditComponent";
 import Generator from "../constant/DataGenerator";
-
+import ListComponent from "../components/ListComponent";
 const generator = new Generator();
 
 const User = () => {
@@ -13,7 +13,9 @@ const User = () => {
     let x = input_data.set;
     x[index].value = value;
     set_input_data({ set: x });
+    console.log(input_data)
   };
+
   useEffect(() => {
     console.log("input_data", input_data);
   }, [input_data]);
@@ -25,6 +27,7 @@ const User = () => {
         mode={"CREATE"}
         type={"User"}
       />
+      <ListComponent user_data={input_data} />
     </div>
   );
 };

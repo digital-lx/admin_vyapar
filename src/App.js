@@ -8,13 +8,13 @@ import Product from "./pages/product";
 import User from "./pages/users";
 import Vendor from "./pages/vendor";
 import logo from "./assets/university_bg_s.jpg";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 /**TODO----
  * 1.CREATE FAKE SAMPLE DATA OF USER,VENDOR ,PRODUCT;(JS)
  * 2.CREATE A FORM CONTAINING INPUT OR RELEVANT COMPONENT
- * 3.LIST OF ALL THE DATA - PAGINATION
- * 4.
- * 5.
+ * 3.LIST ALL THE DATA INSIDE EACH PAGES - PAGINATION
+ *     - COMMON - LIST - BUTTON - PAGINATION
+ *     - NOTCOMMON - LISTITEM - HEADER
  */
 function App() {
   return (

@@ -34,6 +34,7 @@ const User = () => {
 
   useEffect(() => {
     getUsers();
+    console.log(list_data)
   }, []);
   return (
     <div>
